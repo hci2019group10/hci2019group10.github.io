@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GROUP 10</title>
-<link
-	href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:400,600,700,800"
-	rel="stylesheet">
-<link
-	href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
-	rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="responsive.css">
-<link rel="stylesheet" href="project.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto"
-	rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GROUP 10</title>
+	<link
+			href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:400,600,700,800"
+			rel="stylesheet">
+	<link
+			href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
+			rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="styleTest.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto"
+		  rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -28,777 +28,676 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header" style="background-image: none ; height: 8em; width: 100%;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="header-top">
-							<div class="row">
-								<div class="col-md-3 col-sm-12 col-xs-12">
-									<div class="logo">
-										<h2>
-											<a href="#">GROUP 10</a>
-										</h2>
-									</div>
+<div class="wrapper">
+	<header class="header" style="background-image: none ; height: 8em; width: 100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-top">
+						<div class="row">
+							<div class="col-md-3 col-sm-12 col-xs-12">
+								<div class="logo">
+									<h2>
+										<a href="#">GROUP 10</a>
+									</h2>
 								</div>
-								<div class="col-md-9 col-sm-12 col-xs-12">
-									<div class="menu">
-										<ul class="nav navbar-nav">
-											<li><a href="index.html">HOME</a></li>
-											<li><a href="study.html">STUDY</a></li>
-											<li class="active"><a href="project.html">PROJECT</a></li>
-											<li><a href="groupDiary.html">GROUP DIARY</a></li>
-											<li><a href="styleGuide.html">STYLE GUIDE</a></li>
-											<li><a href="result.html">RESULT</a></li>
-											<li><a href="about.html">ABOUT</a></li>
+							</div>
+							<div class="col-md-9 col-sm-12 col-xs-12">
+								<div class="menu">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html">HOME</a></li>
+										<li><a href="study.html">STUDY</a></li>
+										<li class="active"><a href="project.html">PROJECT</a></li>
+										<li><a href="groupDiary.html">GROUP DIARY</a></li>
+										<li><a href="styleGuide.html">STYLE GUIDE</a></li>
+										<li><a href="result.html">RESULT</a></li>
+										<li><a href="about.html">ABOUT</a></li>
 
-										</ul>
-									</div>
+									</ul>
 								</div>
-
 							</div>
 
 						</div>
+
 					</div>
 				</div>
-
 			</div>
-		</header>
-		<script>
+
+		</div>
+	</header>
+	<script>
+		var tabs = document.getElementsByClassName("tab");
+		var contents = document.getElementsByClassName("content-tab-item");
+		function ShowTab(tab, content) {
+			var i;
 			var tabs = document.getElementsByClassName("tab");
-			var contents = document.getElementsByClassName("content-tab-item");
-			function ShowTab(tab, content) {
-				var i;
-				var tabs = document.getElementsByClassName("tab");
-				var contents = document
-						.getElementsByClassName("content-tab-item");
-				var tabclick = document.getElementById(tab);
-				var contentsclick = document.getElementById(content);
-				for (i = 0; i < tabs.length; i++) {
-					tabs[i].classList.remove("active");
-					contents[i].classList.remove("active-tab");
-				}
-				tabclick.classList.add("active");
-				contentsclick.classList.add("active-tab");
+			var contents = document
+					.getElementsByClassName("content-tab-item");
+			var tabclick = document.getElementById(tab);
+			var contentsclick = document.getElementById(content);
+			for (i = 0; i < tabs.length; i++) {
+				tabs[i].classList.remove("active");
+				contents[i].classList.remove("active-tab");
 			}
-		</script>
-		<script>
+			tabclick.classList.add("active");
+			contentsclick.classList.add("active-tab");
+		}
+	</script>
+	<script>
+		var tabs = document.getElementsByClassName("tabs");
+		var contents = document.getElementsByClassName("content-tab-items");
+		function ShowTabs(tab, content) {
+			var i;
 			var tabs = document.getElementsByClassName("tabs");
-			var contents = document.getElementsByClassName("content-tab-items");
-			function ShowTabs(tab, content) {
-				var i;
-				var tabs = document.getElementsByClassName("tabs");
-				var contents = document
-						.getElementsByClassName("content-tab-items");
-				var tabclick = document.getElementById(tab);
-				var contentsclick = document.getElementById(content);
-				for (i = 0; i < tabs.length; i++) {
-					tabs[i].classList.remove("actives");
-					contents[i].classList.remove("active-tabs");
-				}
-				tabclick.classList.add("actives");
-				contentsclick.classList.add("active-tabs");
+			var contents = document
+					.getElementsByClassName("content-tab-items");
+			var tabclick = document.getElementById(tab);
+			var contentsclick = document.getElementById(content);
+			for (i = 0; i < tabs.length; i++) {
+				tabs[i].classList.remove("actives");
+				contents[i].classList.remove("active-tabs");
 			}
-		</script>
-		<div id="project">
-			<div class="tab-menu">
-				<a class="tab active" id="tabA" onclick="ShowTab('tabA','contentA')">Requirement</a>
-				<a class="tab" id="tabB" onclick="ShowTab('tabB', 'contentB')">Design</a>
-				<a class="tab" id="tabC" onclick="ShowTab('tabC','contentC')">Implement</a>
-			</div>
+			tabclick.classList.add("actives");
+			contentsclick.classList.add("active-tabs");
+		}
+	</script>
+	<div id="project">
+		<div class="tab-menu">
+			<a class="tab active" id="tabA" onclick="ShowTab('tabA','contentA')">Requirement</a>
+			<a class="tab" id="tabB" onclick="ShowTab('tabB', 'contentB')">Design</a>
+			<a class="tab" id="tabC" onclick="ShowTab('tabC','contentC')">Implement</a>
+		</div>
 
-			<div class="content-tab">
-				<div class="content-tab-item active-tab" id="contentA" style="height: 49em">
-					<h3>
-						<center>
-							Danh sách chức năng
-						</center>
-					</h3>
-					<div class="tables">
-						<table>
-							<tr class="firt-line">
-								<td title="Số thứ tự"><center>STT</center></td>
-								<td><center>Chức năng</center></td>
-								<td><center>Người đề xuất</center></td>
-								<td><center>Người thiết kế</center></td>
-								<td><center>Người hiện thực</center></td>
-								<td><center>Thời gian dự kiến</center></td>
-								<td><center>Trạng thái</center></td>
-							</tr>
-							<tr>
-								<td><center>1</center></td>
-								<td>Tạo trang chủ</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Khắc Huy</td>
-								<td>Phạm Khắc Huy<br> Nguyễn Tấn Huy
-								</td>
-								<td>20/10/2019 - 3/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>2</center></td>
-								<td>Đăng nhập</td>
-								<td>Cả nhóm</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>20/10/2019 - 3/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>3</center></td>
-								<td>Đăng ký</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Minh Quân</td>
-								<td>Phạm Minh Quân</td>
-								<td>20/10/2019 - 3/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>4</center></td>
-								<td>Quên mật khẩu</td>
-								<td>Cả nhóm</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>20/10/2019 - 3/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>5</center></td>
-								<td>Liên hệ</td>
-								<td>Cả nhóm</td>
-								<td>Nguyễn Tấn Huy</td>
-								<td>Nguyễn Tấn Huy</td>
-								<td>3/11/2019 - 10/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>6</center></td>
-								<td>Thời trang nữ</td>
-								<td>Cả nhóm</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>3/11/2019 - 10/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>7</center></td>
-								<td>Giỏ hàng</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Khắc Huy</td>
-								<td>Phạm Khắc Huy</td>
-								<td>3/11/2019 - 10/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>8</center></td>
-								<td>Giới thiệu</td>
-								<td>Cả nhóm</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>3/11/2019 - 10/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>9</center></td>
-								<td>Thời trang nam</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Minh Quân</td>
-								<td>Phạm Minh Quân</td>
-								<td>3/11/2019 - 10/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>10</center></td>
-								<td>Tài khoản</td>
-								<td>Cả nhóm</td>
-								<td>Nguyễn Tấn Huy</td>
-								<td>Nguyễn Tấn Huy</td>
-								<td>10/11/2019 - 17/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>11</center></td>
-								<td>Yêu thích</td>
-								<td>Cả nhóm</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>Nguyễn Thị Thúy Hằng</td>
-								<td>10/11/2019 - 17/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>12</center></td>
-								<td>Sản phẩm</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Khắc Huy</td>
-								<td>Phạm Khắc Huy</td>
-								<td>10/11/2019 - 17/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>13</center></td>
-								<td>Tin tức</td>
-								<td>Cả nhóm</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>Cao Huỳnh Minh Tân</td>
-								<td>10/11/2019 - 17/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-							<tr>
-								<td><center>14</center></td>
-								<td>Phụ kiện</td>
-								<td>Cả nhóm</td>
-								<td>Phạm Minh Quân</td>
-								<td>Phạm Minh Quân</td>
-								<td>10/11/2019 - 17/11/2019</td>
-								<td>Hoàn thành 100%</td>
-							</tr>
-						</table>
-					</div>
+		<div class="content-tab">
+			<div class="content-tab-item active-tab" id="contentA" style="height: 49em">
+				<h3>
+					<center>
+						Danh sách chức năng
+					</center>
+				</h3>
+				<div class="tables">
+					<table>
+						<tr class="firt-line">
+							<td title="Số thứ tự"><center>STT</center></td>
+							<td><center>Chức năng</center></td>
+							<td><center>Người đề xuất</center></td>
+							<td><center>Người thiết kế</center></td>
+							<td><center>Người hiện thực</center></td>
+							<td><center>Thời gian dự kiến</center></td>
+							<td><center>Trạng thái</center></td>
+						</tr>
+						<tr>
+							<td><center>1</center></td>
+							<td>Tạo trang chủ</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Khắc Huy</td>
+							<td>Phạm Khắc Huy<br> Nguyễn Tấn Huy
+							</td>
+							<td>20/10/2019 - 3/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>2</center></td>
+							<td>Đăng nhập</td>
+							<td>Cả nhóm</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>20/10/2019 - 3/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>3</center></td>
+							<td>Đăng ký</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Minh Quân</td>
+							<td>Phạm Minh Quân</td>
+							<td>20/10/2019 - 3/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>4</center></td>
+							<td>Quên mật khẩu</td>
+							<td>Cả nhóm</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>20/10/2019 - 3/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>5</center></td>
+							<td>Liên hệ</td>
+							<td>Cả nhóm</td>
+							<td>Nguyễn Tấn Huy</td>
+							<td>Nguyễn Tấn Huy</td>
+							<td>3/11/2019 - 10/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>6</center></td>
+							<td>Thời trang nữ</td>
+							<td>Cả nhóm</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>3/11/2019 - 10/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>7</center></td>
+							<td>Giỏ hàng</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Khắc Huy</td>
+							<td>Phạm Khắc Huy</td>
+							<td>3/11/2019 - 10/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>8</center></td>
+							<td>Giới thiệu</td>
+							<td>Cả nhóm</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>3/11/2019 - 10/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>9</center></td>
+							<td>Thời trang nam</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Minh Quân</td>
+							<td>Phạm Minh Quân</td>
+							<td>3/11/2019 - 10/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>10</center></td>
+							<td>Tài khoản</td>
+							<td>Cả nhóm</td>
+							<td>Nguyễn Tấn Huy</td>
+							<td>Nguyễn Tấn Huy</td>
+							<td>10/11/2019 - 17/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>11</center></td>
+							<td>Yêu thích</td>
+							<td>Cả nhóm</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>Nguyễn Thị Thúy Hằng</td>
+							<td>10/11/2019 - 17/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>12</center></td>
+							<td>Sản phẩm</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Khắc Huy</td>
+							<td>Phạm Khắc Huy</td>
+							<td>10/11/2019 - 17/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>13</center></td>
+							<td>Tin tức</td>
+							<td>Cả nhóm</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>Cao Huỳnh Minh Tân</td>
+							<td>10/11/2019 - 17/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+						<tr>
+							<td><center>14</center></td>
+							<td>Phụ kiện</td>
+							<td>Cả nhóm</td>
+							<td>Phạm Minh Quân</td>
+							<td>Phạm Minh Quân</td>
+							<td>10/11/2019 - 17/11/2019</td>
+							<td>Hoàn thành 100%</td>
+						</tr>
+					</table>
 				</div>
-				<div class="content-tab-item" id="contentB">
-					<div class="tab-menus" id="flex">
-						<div class="tabs actives" id="tab1" onclick="ShowTabs('tab1','content1')">Nguyễn Tấn Huy</div>
-						<div class="tabs" id="tab2" onclick="ShowTabs('tab2', 'content2')">Nguyễn Thị Thúy Hằng</div>
-						<div class="tabs" id="tab3" onclick="ShowTabs('tab3','content3')">Phạm Khắc Huy</div>
-						<div class="tabs" id="tab4" onclick="ShowTabs('tab4','content4')">Phạm Minh Quân</div>
-						<div class="tabs" id="tab5" onclick="ShowTabs('tab5','content5')">Cao Huỳnh Minh Tân</div>
-					</div>
+			</div>
+			<div class="content-tab-item" id="contentB">
+				<div class="tab-menus" id="flex">
+					<div class="tabs actives" id="tab1" onclick="ShowTabs('tab1','content1')">Nguyễn Tấn Huy</div>
+					<div class="tabs" id="tab2" onclick="ShowTabs('tab2', 'content2')">Nguyễn Thị Thúy Hằng</div>
+					<div class="tabs" id="tab3" onclick="ShowTabs('tab3','content3')">Phạm Khắc Huy</div>
+					<div class="tabs" id="tab4" onclick="ShowTabs('tab4','content4')">Phạm Minh Quân</div>
+					<div class="tabs" id="tab5" onclick="ShowTabs('tab5','content5')">Cao Huỳnh Minh Tân</div>
+				</div>
 
-					<div class="content-tabs" >
-
-						<div class="content-tab-items active-tabs" id="content1" style="height: 110em">
-							<div class="thiet-ke-giay">
+				<div class="content-tabs" >
+					<div class="content-tab-items active-tabs" id="content1">
+						<div class="thietke">
+							<div>
 								<h3>Thiết kế trên giấy</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang liên hệ</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/contact-paper.jpg" width="75%" height="100%">
-									<span  class="btn_down">
+
+								<h4>1. Trang liên hệ</h4>
+
+								<img src="img-project/contact-paper.jpg" >
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/contact-paper.jpg" download="img-project/contact-paper.jpg">Download</a></button>
-									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang tài khoản</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/account-paper.jpg" width="75%" height="100%">
-									<span  class="btn_down">
+                                    </span>
+
+								<h4>2. Trang tài khoản</h4>
+
+
+								<img src="img-project/account-paper.jpg">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/account-paper.jpg" download="img-project/account-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
-							<div class="thiet-ke-figma">
+							<div>
 								<h3>Thiết kế trên figma</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang liên hệ</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/contact.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+								<h4>1. Trang liên hệ</h4>
+
+								<img src="img-project/contact.png">
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/contact.fig" download="img-project/contact.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang tài khoản</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/account.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>2. Trang tài khoản</h4>
+
+								<img class="anh-figma1" src="img-project/account.png" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/account.fig" download="img-project/account.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="content-tab-items" id="content2" style="height: 142em">
-							<div class="thiet-ke-giay">
+
+					<div class="content-tab-items" id="content2" >
+						<div class="thietke">
+							<div>
 								<h3>Thiết kế trên giấy</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang đăng nhập</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/login-paper.jpg" width="75%" height="100%">
 
-									<span  class="btn_down">
+								<h4>1. Trang đăng nhập</h4>
+
+								<img src="img-project/login-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/login-paper.jpg" download="img-project/login-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang thời trang nữ</h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/female-paper.jpg" width="75%" height="100%">
 
-									<span class="btn_down">
+								<h4>2. Trang thời trang nữ</h4>
+
+								<img src="img-project/female-paper.jpg" >
+
+								<span class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/female-paper.jpg" download="img-project/female-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang danh sách yêu thích</h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/lovely-paper.jpg" width="75%" height="100%">
 
-									<span class="btn_down">
+
+
+								<h4>3. Trang danh sách yêu thích</h4>
+
+								<img src="img-project/lovely-paper.jpg" >
+
+								<span class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/lovely-paper.jpg" download="img-project/lovely-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-							</div>
-							<div class="thiet-ke-figma">
-								<h3>Thiết kế trên figma</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang đăng nhập</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/login.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+							</div>
+
+							<div>
+								<h3>Thiết kế trên figma</h3>
+
+								<h4>1. Trang đăng nhập</h4>
+
+								<img src="img-project/login.png" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/login.fig" download="img-project/login.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang thời trang nữ</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/female.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>2. Trang thời trang nữ</h4>
+
+								<img src="img-project/female.png">
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/female.fig" download="img-project/female.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang danh sách yêu thích</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/lovely.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+
+								<h4>3. Trang danh sách yêu thích</h4>
+
+								<img src="img-project/lovely.png">
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/lovely.fig" download="img-project/lovely.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="content-tab-items" id="content3" style="height: 178em">
-							<div class="thiet-ke-giay">
+					</div>
+					<div class="content-tab-items" id="content3" >
+						<div class="thietke">
+							<div>
 								<h3>Thiết kế trên giấy</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang chủ</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/index-paper.jpg" width="75%" height="100%">
+								<h4>1. Trang chủ</h4>
 
-									<span  class="btn_down">
+								<img  src="img-project/index-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/index-paper.jpg" download="img-project/index-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Giỏ hàng </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/productBasket-paper.jpg" width="75%" height="100%">
+								<h4>2. Giỏ hàng </h4>
 
-									<span  class="btn_down">
+								<img src="img-project/productBasket-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/productBasket-paper.jpg" download="img-project/productBasket-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang sản phẩm </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/product-paper.jpg" width="75%" height="100%">
+								<h4>3. Trang sản phẩm </h4>
+								<img  src="img-project/product-paper.jpg" >
 
-									<span  class="btn_down">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/product-paper.jpg" download="img-project/product-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
-							<div class="thiet-ke-figma">
+							<div>
 								<h3>Thiết kế trên figma</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang chủ</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/index.png" width="75%" height="100%">
+								<h4>1. Trang chủ</h4>
 
-									<span  class="btn_down">
+								<img  src="img-project/index.png" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/index.fig" download="img-project/index.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Giỏ hàng</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/productBasket.png" width="75%" height="100%">
+								<h4>2. Giỏ hàng</h4>
+								<img class="anh-figma2" src="img-project/productBasket.png" >
 
-									<span  class="btn_down">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/productBasket.fig" download="img-project/productBasket.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang sản phẩm</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/product.png" width="75%" height="100%">
+								<h4>3. Trang sản phẩm</h4>
+								<img class="anh-figma2" src="img-project/product.png" >
 
-									<span  class="btn_down">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/product.fig" download="img-project/product.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="content-tab-items" id="content4" style="height: 165em">
-							<div class="thiet-ke-giay">
+					</div>
+					<div class="content-tab-items" id="content4" >
+						<div class="thietke">
+							<div>
 								<h3>Thiết kế trên giấy</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang đăng ký</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/index-paper.jpg" width="75%" height="100%">
+								<h4>1. Trang đăng ký</h4>
+								<img src="img-project/index-paper.jpg" >
 
-									<span  class="btn_down">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/register-paper.jpg" download="img-project/register-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang thời trang nam </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/male-paper.jpg" width="75%" height="100%">
 
-									<span  class="btn_down">
+								<h4>2. Trang thời trang nam </h4>
+
+								<img src="img-project/male-paper.jpg" >
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/male-paper.jpg" download="img-project/male-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang phụ kiện </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/spareParts-paper.jpg" width="75%" height="100%">
+								<h4>3. Trang phụ kiện </h4>
 
-									<span  class="btn_down">
+								<img  src="img-project/spareParts-paper.jpg" >
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/spareParts-paper.jpg" download="img-project/spareParts-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
-							<div class="thiet-ke-figma">
+							<div >
 								<h3>Thiết kế trên figma</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang đăng ký</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/register.png" width="75%" height="100%">
-
-									<span  class="btn_down">
+								<h4>1. Trang đăng ký</h4>
+								<img src="img-project/register.png" >
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/register.fig" download="img-project/register.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang thời trang nam</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/male.png" width="75%" height="100%">
+								<h4>2. Trang thời trang nam</h4>
 
-									<span  class="btn_down">
+								<img  src="img-project/male.png" >
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/male.fig" download="img-project/male.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang phụ kiện</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/spareParts.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>3. Trang phụ kiện</h4>
+
+								<img src="img-project/spareParts.png">
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/spareParts.fig" download="img-project/spareParts.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
 						</div>
-						<div class="content-tab-items" id="content5" style="height: 152em;">
-							<div class="thiet-ke-giay">
+					</div>
+					<div class="content-tab-items" id="content5" >
+						<div class="thietke">
+							<div>
 								<h3>Thiết kế trên giấy</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang quên mật khẩu</h4>
-									<div class="anh-giay">
-										<img class="anh-giay1" src="img-project/forgetPassword-paper.jpg" width="75%" height="100%">
 
-									<span  class="btn_down">
+								<h4>1. Trang quên mật khẩu</h4>
+
+								<img  src="img-project/forgetPassword-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/forgetPassword-paper.jpg" download="img-project/forgetPassword-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang giới thiệu </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/introduce-paper.jpg" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>2. Trang giới thiệu </h4>
+
+								<img  src="img-project/introduce-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/introduce-paper.jpg" download="img-project/introduce-paper.jpg">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang tin tức </h4>
-									<div class="anh-giay">
-										<img class="anh-giay2" src="img-project/introduce-paper.jpg" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>3. Trang tin tức </h4>
+
+								<img  src="img-project/introduce-paper.jpg" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/news-paper.jpg" download="img-project/news-paper.jpg">Download</a></button>
 									</span>
-								</div>
-								</div>
 							</div>
-							<div class="thiet-ke-figma">
+							<div >
 								<h3>Thiết kế trên figma</h3>
-								<div class="thiet-ke">
-									<h4>1. Trang quên mật khẩu</h4>
-									<div class="anh-figma">
-										<img class="anh-figma1" src="img-project/forgetPassword.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+								<h4>1. Trang quên mật khẩu</h4>
+
+								<img src="img-project/forgetPassword.png" >
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/forgetPassword.fig" download="img-project/forgetPassword.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>2. Trang giới thiệu</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/introduce.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>2. Trang giới thiệu</h4>
+
+								<img src="img-project/introduce.png">
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/introduce.fig" download="img-project/introduce.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
-								<div class="thiet-ke">
-									<h4>3. Trang tin tức</h4>
-									<div class="anh-figma">
-										<img class="anh-figma2" src="img-project/news.png" width="75%" height="100%">
 
-									<span  class="btn_down">
+
+								<h4>3. Trang tin tức</h4>
+
+								<img class="anh-figma2" src="img-project/news.png">
+
+								<span  class="btn_down">
 										<button class="btn"><i class="fa fa-download"></i>
 										<a href="img-project/news.fig" download="img-project/news.fig">Download</a></button>
 									</span>
-									</div>
-								</div>
 							</div>
 						</div>
-
-						<div  class="btn-downall">
-										<button class="btn"><i class="fa fa-download"></i>
-										<a href="img-project-group-10.rar" download="img-project-group-10.rar">Download-all</a></button>
-									</div>
-
-
-
 
 					</div>
-	</div>
-			<div class="content-tab-item" id="contentC" style="min-height: 21em">
-				<div class="container" style="margin-right:20%;">
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default ">
-							<div class="panel-heading">
-								<h4 class="panel-title"  id="active-coll">
-									<a data-toggle="collapse"  data-parent="#accordion" href="#collapse1" >Front-end</a>
-								</h4>
-								<button type="button" class="btn btn-info">
-									<a href="https://quanlyshopquanao.tk/" target="blank">Xem trang front-end</a>
-								</button>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<div class="card-body" >
-										<table>
-											<tr>
-												<th><center>No.</center></th>
-												<th><center>function name</center></th>
-												<th><center>Complete</center></th>
-											</tr>
-											<tr>
-												<td><center>1</center></td>
-												<td>Trang chủ</td>
-												<td><a href="https://quanlyshopquanao.tk/" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>2</center></td>
-												<td>Đăng nhập</td>
-												<td><a href="https://quanlyshopquanao.tk/login.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>3</center></td>
-												<td>Đăng ký</td>
-												<td><a href="https://quanlyshopquanao.tk/register.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>4</center></td>
-												<td>Quên mật khẩu</td>
-												<td><a href="https://quanlyshopquanao.tk/forgetPassword.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>5</center></td>
-												<td>Liên hệ</td>
-												<td><a href="https://quanlyshopquanao.tk/contact.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>6</center></td>
-												<td>Thời trang nữ</td>
-												<td><a href="https://quanlyshopquanao.tk/female.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>7</center></td>
-												<td>Giỏ hàng</td>
-												<td><a href="https://quanlyshopquanao.tk/productBasket.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>8</center></td>
-												<td>Giới thiệu</td>
-												<td><a href="https://quanlyshopquanao.tk/introduce.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>9</center></td>
-												<td>Thời trang nam</td>
-												<td><a href="https://quanlyshopquanao.tk/male.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>10</center></td>
-												<td>Tài khoản</td>
-												<td><a href="https://quanlyshopquanao.tk/account.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>11</center></td>
-												<td>Yêu thích</td>
-												<td><a href="https://quanlyshopquanao.tk/lovely.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>12</center></td>
-												<td>Sản phẩm</td>
-												<td><a href="https://quanlyshopquanao.tk/product.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>13</center></td>
-												<td>Tin tức</td>
-												<td><a href="https://quanlyshopquanao.tk/news.html" target="blank">Xem kết quả</a></td>
-											</tr>
-											<tr>
-												<td><center>14</center></td>
-												<td>Phụ kiện</td>
-												<td><a href="https://quanlyshopquanao.tk/spareParts.html" target="blank">Xem kết quả</a></td>
-											</tr>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-size: 14px">Back-end</a>
-								</h4>
-								<button type="button" class="btn btn-info">
-									<a href="#" target="blank">Xem trang back-end</a>
-								</button>
-							</div>
-							<div id="collapse2" class="panel-collapse collapse">
-								<div class="panel-body">
-									<div class="card-body" >
-										<table>
-											<tr>
-												<th>No.</th>
-												<th>function name</th>
-												<th>Complete</th>
-											</tr>
-											
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
+				</div>
+				<div  class="btn-downall">
+					<button class="btn"><i class="fa fa-download"></i>
+						<a href="img-project-group-10.rar" download="img-project-group-10.rar">Download-all</a></button>
 
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="content-tab-item" id="contentC" style="min-height: 21em">
+			<div class="container" >
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default ">
+						<div class="panel-heading">
+							<h4 class="panel-title"  id="active-coll">
+								<a data-toggle="collapse"  data-parent="#accordion" href="#collapse1" >Front-end</a>
+							</h4>
+							<button type="button" class="btn btn-info">
+								<a href="https://quanlyshopquanao.tk/" target="blank">Xem trang front-end</a>
+							</button>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="card-body" >
+									<table class="table-imp">
+										<tr>
+											<td>1. Trang chủ</td>
+											<td>8. Giới thiệu</td>
+										</tr>
+										<tr>
+											<td>2. Đăng nhập</td>
+											<td>9. Thời trang nam</td>
+										</tr>
+										<tr>
+											<td>3. Đăng ký</td>
+											<td>10. Tài khoản</td>
+										</tr>
+										<tr>
+											<td>4. Quên mật khẩu</td>
+											<td>11. Yêu thích </td>
+										</tr>
+
+										<tr>
+											<td>5. Liên hệ</td>
+											<td>12. Sản phẩm</td>
+										</tr>
+										<tr>
+											<td>6. Thời trang nữ</td>
+											<td>13. Tin tức</td>
+										</tr>
+										<tr>
+											<td>7. Giỏ hàng</td>
+											<td>14. Phụ kiện</td>
+										</tr>
+										<tr>
+
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-size: 14px">Back-end</a>
+							</h4>
+							<button type="button" class="btn btn-info">
+								<a href="#" target="blank">Xem trang back-end</a>
+							</button>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div class="card-body" >
+									<p>Coming soon</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<a href="javascript:" id="return-to-top" title="Return to top"><i class="icon-chevron-up"></i></a>
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+</script>
+<div class="wrapper">
+	<footer class="footer" id="float-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-5 col-xs-6">
+					<div class="text">
+						<p>&copy; 2019 All Rights Reserved.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-3 col-xs-4">
+					<div class="footer-logo">
+						<p><a href="#">Ho Chi Minh City</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-2">
+					<div class="icon">
+						<p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-	</div>
-	<a href="javascript:" id="return-to-top" title="Return to top"><i class="icon-chevron-up"></i></a>
-	<script>
-		$(window).scroll(function() {
-			if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-				$('#return-to-top').fadeIn(200);    // Fade in the arrow
-			} else {
-				$('#return-to-top').fadeOut(200);   // Else fade out the arrow
-			}
-		});
-		$('#return-to-top').click(function() {      // When arrow is clicked
-			$('body,html').animate({
-				scrollTop : 0                       // Scroll to top of body
-			}, 500);
-		});
-	</script>
-		<div class="wrapper">
-			<footer class="footer" id="float-bottom">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-5 col-xs-6">
-							<div class="text">
-								<p>&copy; 2019 All Rights Reserved.</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-3 col-xs-4">
-							<div class="footer-logo">
-								<p><a href="#">Ho Chi Minh City</a></p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-2">
-							<div class="icon">
-								<p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+	</footer>
 
-		</div>
+</div>
 
 <script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/masonry.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/active.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/masonry.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/active.js"></script>
 </body>
 
 </html>
