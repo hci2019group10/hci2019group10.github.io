@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GROUP 10</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:400,600,700,800"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="groupdiary.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto"
+	rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header-top">
+							<div class="row">
+								<div class="col-md-3 col-sm-12 col-xs-12">
+									<div class="logo">
+										<h2>
+											<a href="index.html">GROUP 10</a>
+										</h2>
+									</div>
+								</div>
+								<div class="col-md-9 col-sm-12 col-xs-12">
+									<div class="menu">
+										<ul class="nav navbar-nav">
+											<li><a href="index.html">HOME</a></li>
+											<li><a href="study.html">STUDY</a></li>
+											<li><a href="project.html">PROJECT</a></li>
+											<li class="active"><a href="groupDiary.html">GROUP DIARY</a></li>
+											<li><a href="styleGuide.html">STYLE GUIDE</a></li>
+											<li><a href="result.html">RESULT</a></li>
+											<li><a href="about.html">ABOUT</a></li>
+
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					var tabs = document.getElementsByClassName("tab");
+					var contents = document.getElementsByClassName("content-tab-item");
+					function ShowTab(tab, content) {
+						var i;
+						var tabs = document.getElementsByClassName("tab");
+						var contents = document.getElementsByClassName("content-tab-item");
+						var tabclick = document.getElementById(tab);
+						var contentsclick = document.getElementById(content);
+						for (i = 0; i < tabs.length; i++) {
+							tabs[i].classList.remove("active");
+							contents[i].classList.remove("active-tab");
+						}
+						tabclick.classList.add("active");
+						contentsclick.classList.add("active-tab");
+					}
+				</script>
+				<div id="diary">
+					<div class="tab-menu">
+						<a class="tab active" id="tabA" onclick="ShowTab('tabA','contentA')">Tuần 1</a>
+						<a class="tab" id="tabB" onclick="ShowTab('tabB', 'contentB')">Tuần 2</a>
+						<a class="tab" id="tabC" onclick="ShowTab('tabC','contentC')">Tuần 3</a>
+						<a class="tab" id="tabD" onclick="ShowTab('tabD','contentD')">Tuần 4</a>
+						<a class="tab" id="tabE" onclick="ShowTab('tabE','contentE')">Tuần 5</a>
+						<a class="tab" id="tabF" onclick="ShowTab('tabF','contentF')">Tuần 6</a>
+					</div>
+
+					<div class="content-tab">
+						<div class="content-tab-item active-tab" id="contentA">
+							<h4>
+									1. Phân công công việc
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Tạo tên miền với tên miền là tk</td>
+										<td><a href="domain.html" target="_blank">Xem tại đây</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Cách đăng các file lên github</td>
+										<td><a href="pushFile.html" target="_blank">Xem tại
+												đây</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Cách tạo reponsitories</td>
+										<td><a href="creatRepo.html" target="_blank">Xem tại
+												đây</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Cách xóa reponsitories</td>
+										<td><a href="DeleteRepository.html" target="_blank">Xem
+												tại đây</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Cách tạo tài khoản github</td>
+										<td><a href="account.html" target="_blank">Xem tại
+												đây</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-1.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+						<div class="content-tab-item" id="contentB">
+							<h4>
+								1. Phân công công việc
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Tạo menu group diary và thanh menu các tuần</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Tạo table cho group diary</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Edit font và màu sắc cho group diary</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Tạo menu project</td>
+										<td>Hoàn thành</a></td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Chỉnh sửa lại web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-2.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+						<div class="content-tab-item" id="contentC">
+							<h4>
+								1. Phân công công việc
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td style="width:100px"><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Tạo domain cho project nhóm<br>Phân tích các
+											chức năng của project<br> Tổng hợp các các chức năng
+											thành 1 trang web
+										</td>
+										<td >Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Thiết kế và hiện thực trang đăng nhập (login) với tên
+											file là login.html của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Thiết kế và hiện thực trang chủ (index) với tên file
+											là index.html của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Thiết kế và hiện thực trang đăng kí tài khoản
+											(register) với tên file là register.html của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Thiết kế và hiện thực trang quên mật khẩu (forget
+											password) với tên file là forgetPassword.html của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-3.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+						<div class="content-tab-item" id="contentD">
+							<h4>
+								1. Phân công công việc
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Thiết kế và hiện thực trang liên hệ (contact.html)
+											của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Thiết kế và hiện thực trang thời trang nữ
+											(female.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Thiết kế và hiện thực trang giỏ hàng
+											(productBasket.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Thiết kế và hiện thực trang thời trang nam
+											(male.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Thiết kế và hiện thực trang giới thiệu
+											(introduce.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-4.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+						<div class="content-tab-item" id="contentE">
+							<h4>
+								
+									1. Phân công công việc
+								
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Thiết kế và hiện thực trang tài khoản (account.html)
+											của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Thiết kế và hiện thực trang danh sách yêu thích
+											(lovely.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Thiết kế và hiện thực trang sản phẩm
+											(product.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Thiết kế và hiện thực trang phụ kiện
+											(spareParts.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Thiết kế và hiện thực trang tin tức
+											(news.html) của project</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-5.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+						<div class="content-tab-item" id="contentF">
+							<h4>
+								
+									1. Phân công công việc
+								
+							</h4>
+							<div class="tables">
+								<table>
+									<tr class="firt-line">
+										<td title="Số thứ tự"><center>STT</center></td>
+										<td title="Mã số sinh viên"><center>MSSV</center></td>
+										<td><center>Họ tên</center></td>
+										<td><center>Công việc được giao</center></td>
+										<td><center>Kết quả</center></td>
+										<td><center>Tiến độ</center></td>
+									</tr>
+									<tr>
+										<td><center>1</center></td>
+										<td class="textMSSV">17130085</td>
+										<td>Nguyễn Tấn Huy</td>
+										<td>Thực hiện trang result của web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>2</center></td>
+										<td class="textMSSV">17130055</td>
+										<td>Nguyễn Thị Thúy Hằng</td>
+										<td>Chỉnh sửa lại trang about của web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>3</center></td>
+										<td class="textMSSV">17130086</td>
+										<td>Phạm Khắc Huy</td>
+										<td>Chỉnh sửa lại trang group diary của web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>4</center></td>
+										<td class="textMSSV">17130175</td>
+										<td>Phạm Minh Quân</td>
+										<td>Chỉnh sửa lại trang project của web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+									<tr>
+										<td><center>5</center></td>
+										<td class="textMSSV">17130206</td>
+										<td>Cao Huỳnh Minh Tân</td>
+										<td>Thực hiện trang study của web nhóm</td>
+										<td>Hoàn thành</td>
+										<td class="textMSSV">100%</td>
+									</tr>
+								</table>
+							</div>
+							<div class="anhGroup">
+								<h4>
+									2. Ảnh nhóm
+								</h4>
+								<img src="img/group-photo-6.jpg" width="1250px" height="650px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-5 col-xs-6">
+						<div class="text">
+							<p>&copy; 2019 All Rights Reserved.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-3 col-xs-4">
+						<div class="footer-logo">
+							<p>
+								<a href="#">Ho Chi Minh City</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-2">
+						<div class="icon">
+							<p>
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a
+									href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a
+									href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a
+									href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a
+									href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/masonry.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/active.js"></script>
+</body>
+
+</html>

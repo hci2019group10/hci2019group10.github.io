@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create repository</title>
+	
+	<style>
+	div.border{
+	padding-left: 3%;
+	border: 1px solid gray;
+	width: 40%;
+	background-color:#f2ecef;
+	margin: left;
+	
+	
+	}
+	
+	</style>
+</head>
+<body>
+ <h1> Create a repository on Github: </h1><br><br>
+  Log into <span style="color:blue;">Github</span> , then click the + on the menu and select
+  <i>New repository</i>
+  <center>
+  <img src="diary1Image/step1.jpg" alt="step1.jpg" >
+  
+  </center><br><br>
+  
+You will need to name your repository. You can choose the type of repository as <b>Public</b> 
+(anyone can clone) and <b>Private</b> (only authorized people can clone).<br><br>
+  
+   <center>
+  <img src="diary1Image/step2.jpg" alt="step2.jpg" >
+  
+  </center><br><br>
+  
+  Once created, it will lead you to the manual page for working with the newly created repository. And your repository will now have the address as 
+  https://github.com/$user-name/$repository,
+  for example https://github.com/PhamHuy211199/17130086.git<br><br>
+	Your job now is to clone this repository to your computer by command git clone địa_chỉ.	
+	
+	<div class="border">
+	<span style="color:green">$</span> git clone https://github.com/thachphamblog/hoc-git<br>
+								Cloning into 'hoc-git'...<br>
+								warning: You appear to have cloned an empty repository.<br>
+								Checking connectivity... done<br>
+
+</div><br><br>
+
+Now go to the working tree folder (just clone repository) and try to create a file named README.md ,
+ then use the command git add to put this file into the Staging Area.
+ <div class="border">
+<span style="color:green">$</span> echo "# 17130086" >> README.md<br>
+<span style="color:green">$</span>git init<br>
+<span style="color:green">$</span>git add README.md<br>
+<span style="color:green">$</span>git commit -m "first commit"<br>
+<span style="color:green">$</span>git remote add origin https://github.com/PhamHuy211199/17130086.git<br>
+<span style="color:green">$</span>git push -u origin master<br>
+ 
+ </div><br><br>
+ However, after the commit is complete, the file that has been committed will still not appear in the Github repository, but you have to do one
+ more thing by using the command <b>git push</b> to push <br> the committed file to Github. Note that <b> will need to enter your Github account and password </b>.
+ <div class="border">
+ <span style="color:green">$</span>git remote add origin https://github.com/PhamHuy211199/17130086.git<br>
+<span style="color:green">$</span>git push -u origin master<br>
+ </div><br><br>
+<b> origin</b> means the name of the remote (see next article) and the master name of the branch, these two I will explain more 
+ in its own article. Now you can check your repository on Github.<br><br>
+ 
+ <center>
+  <img src="diary1Image/last.jpg" alt="step2.jpg" >
+  
+  </center><br><br>
+  <h2>Epilogue: </h2>
+  Now you know how to create a repository for Git? It's easy, right now, to make it easier for you to continue, let's create a reposity on your computer <br> and commit files,
+  or you can use Github to practice putting your code into the repository for be proficient.
+  
+ 
+ 
+	
+	
+
+  
+  
+  
+  
+  
+  
+ </body>
+ </html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GROUP 10</title>
+	<link
+			href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Open+Sans:400,600,700,800"
+			rel="stylesheet">
+	<link
+			href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900"
+			rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="styleGuide.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header" style="background-image: none ; height: 8em; width: 100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="header-top">
+						<div class="row">
+							<div class="col-md-3 col-sm-12 col-xs-12">
+								<div class="logo">
+									<h2>
+										<a href="#">GROUP 10</a>
+									</h2>
+								</div>
+							</div>
+							<div class="col-md-9 col-sm-12 col-xs-12">
+								<div class="menu">
+									<ul class="nav navbar-nav">
+										<li><a href="index.html">HOME</a></li>
+										<li><a href="study.html">STUDY</a></li>
+										<li><a href="project.html">PROJECT</a></li>
+										<li><a href="groupdiary.html">GROUP DIARY</a></li>
+										<li class="active"><a href="styleGuide.html">STYLE GUIDE</a></li>
+										<li><a href="result.html">RESULT</a></li>
+										<li><a href="about.html">ABOUT</a></li>
+
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<script>
+		var tabs = document.getElementsByClassName("tab");
+		var contents = document.getElementsByClassName("content-tab-item");
+		function ShowTab(tab, content) {
+			var i;
+			var tabs = document.getElementsByClassName("tab");
+			var contents = document
+					.getElementsByClassName("content-tab-item");
+			var tabclick = document.getElementById(tab);
+			var contentsclick = document.getElementById(content);
+			for (i = 0; i < tabs.length; i++) {
+				tabs[i].classList.remove("active");
+				contents[i].classList.remove("active-tab");
+			}
+			tabclick.classList.add("active");
+			contentsclick.classList.add("active-tab");
+		}
+	</script>
+	<script>
+		var tabs = document.getElementsByClassName("tabs");
+		var contents = document.getElementsByClassName("content-tab-items");
+		function ShowTabs(tab, content) {
+			var i;
+			var tabs = document.getElementsByClassName("tabs");
+			var contents = document
+					.getElementsByClassName("content-tab-items");
+			var tabclick = document.getElementById(tab);
+			var contentsclick = document.getElementById(content);
+			for (i = 0; i < tabs.length; i++) {
+				tabs[i].classList.remove("actives");
+				contents[i].classList.remove("active-tabs");
+			}
+			tabclick.classList.add("actives");
+			contentsclick.classList.add("active-tabs");
+		}
+	</script>
+	<div id="project">
+		<div class="tab-menu">
+			<a class="tab active" id="tabA" onclick="ShowTab('tabA','contentA')">Web group</a>
+			<a class="tab" id="tabB" onclick="ShowTab('tabB', 'contentB')">Project</a>
+		</div>
+
+		<div class="content-tabs">
+			<div class="content-tab-item active-tab" id="contentA">
+
+				<div class="container" >
+
+					<ul class="nav nav-tabs" style="background-color: white">
+						<li class="active"><a data-toggle="tab" href="#fonts">Typography</a></li>
+						<li><a data-toggle="tab" href="#menuA">Color</a></li>
+						<li><a data-toggle="tab" href="#menuB">Image</a></li>
+						<li><a data-toggle="tab" href="#menuD">Table & button</a></li>
+						<li><a data-toggle="tab" href="#menuC">Directory</a></li>
+					</ul>
+
+					<div class="tab-content" style="padding-top: 2em; ">
+						<div id="fonts" class="tab-pane fade in active">
+							<ol>
+								<li>Font family</li>
+								<ul>
+									<li style="font-family: 'Dancing Script', cursive">"Dancing Script", cursive</li>
+									<li style="font-family: 'Ubuntu',sans-serif"> "Ubuntu",sans-serif </li>
+									<li style="font-family: 'Open Sans', sans-serif"> "Open Sans", sans-serif</li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Headings</li>
+								<ul class="pt-3 pb-1">
+									<li><h1> H1 - Heading Title - 36px</h1></li>
+									<li><h2> H2 - Heading Title - 30px</h2></li>
+									<li><h3> H3 - Heading Title - 24px</h3></li>
+									<li><h4> H4 - Heading Title - 18px</h4></li>
+									<li><h5> H5 - Heading Title - 14px</h5></li>
+									<li><h6> H6 - Heading Title - 12px</h6></li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Font-size</li>
+								<ul>
+									<li ><span style="font-size: 44px">Logo title</span></li>
+									<li style="font-size: 14px">Menubar, button,table title</li>
+									<li><span style="font-size: 15px">Title of main-content</span></li>
+									<li><span style=" font-size: 24px"> Some text</span></li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Link</li>
+								<ul>
+									<li ><a href="#" class="title-link" > THIS IS MENUBAR'S LINK</a></li>
+									<li ><a href="#" class="main-link" > This is link at main-body</a></li>
+									<li><a href="#" class="other-link">This is other link</a></li>
+								</ul>
+							</ol>
+						</div>
+						<div id="menuA" class="tab-pane fade">
+							<ol>
+								<li>Logo</li>
+								<div class="flex-row">
+									<div style="background-color: #ffffff"><span class="text-content" style="color: black">#FFFFFF</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Header</li>
+								<div class="flex-row">
+									<div style="background-color: #333333"><span class="text-content">#333333</span></div>
+									<div style="background-color: #ED0C0C"><span class="text-content">#ED0C0C</span></div>
+
+								</div>
+								<hr style="width: 80%">
+								<li>Button</li>
+								<div class="flex-row">
+									<div style="background-color: #305F72"><span class="text-content">#305F72</span></div>
+									<div style="background-color: #568EA6"><span class="text-content">#568EA6</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Other</li>
+								<div class="flex-row">
+									<div style="background-color: #305F72"><span class="text-content">#305F72</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Footer</li>
+								<div class="flex-row">
+									<div style="background-color: #333333"><span class="text-content">#333333</span></div>
+									<div style="background-color: #FFFFFF"><span class="text-content" style="color: black">#FFFFFF</span></div>
+								</div>
+							</ol>
+						</div>
+						<div id="menuB" class="tab-pane fade">
+							<ol>
+								<img src="img/683x328.jpg" alt="size image">
+								<img src="img/255x311.jpg" alt="size image">
+								<img src="img/249x348.jpg" alt="size image">
+							</ol>
+						</div>
+						<div id="menuD" class="tab-pane fade" style="min-height: 30em">
+							<ol>
+								<li>Table</li>
+								<div class="tables">
+									<table>
+										<tr class="firt-line">
+											<td title="Số thứ tự"><center>text</center></td>
+											<td><center>text</center></td>
+											<td><center>text</center></td>
+											<td><center>text</center></td>
+											<td><center>text</center></td>
+											<td><center>text</center></td>
+											<td><center>text</center></td>
+										</tr>
+										<tr>
+											<td><center>1</center></td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text<br> text
+											</td>
+											<td>text</td>
+											<td>text</td>
+										</tr>
+										<tr>
+											<td><center>2</center></td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+										</tr>
+										<tr>
+											<td><center>3</center></td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+											<td>text</td>
+										</tr>
+
+
+									</table>
+								</div>
+								<li>Button</li>
+								<p><input type="submit" value="Value"></p>
+								<div class="btn_down"><button class="btn" style="margin-left: 11em;"><i class="fa fa-download"></i>
+									<a href="#" download="#">Download</a></button>
+								</div>
+							</ol>
+						</div>
+						<div id="menuC" class="tab-pane fade">
+							<img src="img/direct.png" alt="directory">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-tab-item" id="contentB" >
+				<div class="container" >
+
+					<ul class="nav nav-tabs" style="background-color: white">
+						<li class="active"><a data-toggle="tab" href="#font">Typography</a></li>
+						<li><a data-toggle="tab" href="#menu1">Color</a></li>
+						<li><a data-toggle="tab" href="#menu2">Image</a></li>
+						<li><a data-toggle="tab" href="#menu3">Directory</a></li>
+					</ul>
+
+					<div class="tab-content" style="padding-top: 2em; ">
+						<div id="font" class="tab-pane fade in active">
+							<ol>
+								<li>Font family</li>
+								<ul>
+									<li style="font-family: 'Brandon-blk',sans-serif">"Brandon-blk",sans-serif</li>
+									<li style="font-family: Roboto"> Roboto</li>
+									<li style="font-family: 'brandon-blk', sans-serif"> "Brandon-light",sans-serif </li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Headings</li>
+								<ul class="pt-3 pb-1">
+									<li><h1> H1 - Heading Title - 36px</h1></li>
+									<li><h2> H2 - Heading Title - 30px</h2></li>
+									<li><h3> H3 - Heading Title - 24px</h3></li>
+									<li><h4> H4 - Heading Title - 18px</h4></li>
+									<li><h5> H5 - Heading Title - 14px</h5></li>
+									<li><h6> H6 - Heading Title - 12px</h6></li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Font-size</li>
+								<ul>
+									<li style="font-size: 12px">TITLE OF MENUBAR</li>
+									<li><span style="font-size: 15px">Title of main-content</span></li>
+									<li><span style=" font-size: 24px"> Title of price</span></li>
+								</ul>
+								<hr style="width: 80%">
+								<li>Link</li>
+								<ul>
+									<li ><a href="#" class="title-link" > THIS IS MENUBAR'S LINK</a></li>
+									<li ><a href="#" class="main-link" > This is link at main-body</a></li>
+									<li><a href="#" class="other-link">This is other link</a></li>
+								</ul>
+							</ol>
+						</div>
+						<div id="menu1" class="tab-pane fade">
+							<ol>
+								<li>Logo</li>
+								<div class="flex-row">
+									<div style="background-color: #F7941D"><span class="text-content">#F7941D</span></div>
+									<div style="background-color: #ffffff"><span class="text-content" style="color: black">#FFFFFF</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Header</li>
+								<div class="flex-row">
+									<div style="background-color: #333333"><span class="text-content">#333333</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Button</li>
+								<div class="flex-row">
+									<div style="background-color: #F7941D"><span class="text-content">#F7941D</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Sale notice</li>
+								<div class="flex-row">
+									<div style="background-color: #EC7867"><span class="text-content">#EC7867</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Price</li>
+								<div class="flex-row">
+									<div style="background-color: #E75641"><span class="text-content">#E75641</span></div>
+								</div>
+								<hr style="width: 80%">
+								<li>Footer</li>
+								<div class="flex-row">
+									<div style="background-color: #F7941D"><span class="text-content">#F7941D</span></div>
+									<div style="background-color: #111111"><span class="text-content">#111111</span></div>
+								</div>
+							</ol>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+							<ol>
+								<li>Carousel</li>
+								<img src="img/1053x400.jpg" alt="size carousel">
+								<li>Image</li>
+								<img src="img/390x520.jpg" alt="size image">
+								<img src="img/292x400.jpg" alt="size image">
+								<img src="img/249x348.jpg" alt="size image">
+								<img src="img/1168x140.jpg" alt="size image">
+							</ol>
+						</div>
+						<div id="menu3" class="tab-pane fade">
+							<img src="img/direct-pro.png" alt="directory">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<a href="javascript:" id="return-to-top" title="Return to top"><i class="icon-chevron-up"></i></a>
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+</script>
+<div class="wrapper" >
+	<footer class="footer" id="float-bottom" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-5 col-xs-6">
+					<div class="text">
+						<p>&copy; 2019 All Rights Reserved.</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-3 col-xs-4">
+					<div class="footer-logo">
+						<p><a href="#">Ho Chi Minh City</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-2">
+					<div class="icon">
+						<p><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.js"></script>
+<script src="js/masonry.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/active.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+
+#project{
+	position: relative;
+	padding-top: 30px;
+	display: block;
+	width:100%;
+	height: 100%;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+.tables table {
+	width:100%;
+	margin-bottom:20px;
+}
+ #diary .tables table, td,tr{
+	border:1px solid gray;
+}
+ .firt-line{
+	background-color:#def1f2;
+}
+td{
+	padding:5px;
+}
+* {
+  font-family: "Ubuntu",sans-serif;
+}
+.tab-menu {
+	margin-left:10%;
+	margin-right:10%;
+ 
+  
+}
+#flex{
+	display: flex;
+	flex-direction: row;
+}
+#flex >div{
+	width: 13em;
+	padding-top: 2em;
+	padding-left: 10px;
+}
+.tab {
+	border-radius: 10px;
+  padding: 10px 20px;
+  background: #568EA6;
+  color:black;
+  cursor: pointer;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.tab:hover{
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: #305F72;
+}
+.tab+.tab {
+  margin-left: 10px;
+}
+.tab-menu .active{
+	background-color: #305F72;
+	color: white;
+}
+.content-tab-item {
+  display: none;
+	width: 100%;
+}
+.active-tab {
+	
+  display: inline-block;
+}
+
+.tab-menus {
+	padding-left:20px;
+  padding-top:20px;
+}
+.tabs {
+  padding: 10px 20px;
+  background: #FFF;
+  color: black;
+  cursor: pointer;
+ 
+}
+.tab-menus a{
+	text-decoration:none;
+}
+.tabs+.tabs {
+  margin-left: 10px;
+	color: black ;
+}
+.tabs+.tabs:hover {
+	
+	color:#305F72 ;
+}
+.actives {
+  border-bottom:2px solid black;
+}
+.actives{
+	font-size: 16px;
+	color:#305F72 ;
+}
+.content-tab-items {
+  display: none;
+}
+.active-tabs {
+  display: inline-block;
+}
+
+
+.content-tabs{
+	margin-left:10%;
+	margin-right:10%;
+	padding-top:3%;
+}
+.content-tab-items{
+	position:relative;
+	width:100%;
+	
+}
+
+
+.footer {
+	position:relative;
+}
+
+#flex-sub{
+	display: flex;
+	flex-direction: row;
+}
+#flex-sub>div{
+	width: 70%;
+}
+
+input[type="submit"] {
+    padding: 15px 45px;
+    font-size: 18px;
+    color: #fff;
+    background: #305F72;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-radius: 10px;
+	position:absolute;
+}
+ input[type="submit"]:hover{
+	background-color:#568EA6;
+}
+.btn_down .btn {
+    background-color: green;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+	margin-left:15%;
+   
+}
+.btn_down .btn:hover {
+  background-color:DodgerBlue;
+}
+.btn_down .btn a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.title-link{
+	font-family: "brandon-light", sans-serif;
+	font-size: 12px;
+	color: #c8c8c8;
+}
+.title-link:hover{
+	text-decoration: none;
+	color: #F7941D;
+}
+.main-link{
+	font-family: Roboto;
+	font-size: 15px;
+	color: #333333;
+}
+.main-link:hover{
+	color: #aaaaaa;
+	text-decoration: none;
+}
+.other-link{
+	color: #333333;
+	font-size: 15px;
+}
+.other-link:hover{
+	text-decoration: none;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+
+}
+.flex-row >div{
+	border-radius: 50%;
+	position: relative;
+	margin-left: 2em;
+	width: 200px;
+	height: 200px;
+	border: 2px dashed grey;
+}
+.text-content{
+	position: absolute;
+	color: white;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+}
+#menu2,#menuB > ol > img{
+	padding: 2px;
+}
+#return-to-top {
+	position: fixed;
+	margin-bottom: 205px;
+	bottom: 20px;
+	right: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top i {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 13px;
+	font-size: 19px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#return-to-top:hover {
+	background: #305F72;
+}
+#return-to-top:hover i {
+	color: #fff;
+	top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
